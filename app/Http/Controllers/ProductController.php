@@ -11,7 +11,7 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() // GET HTTP, FETCH ALL PRODUCTS
+    public function index() // GET HTTP, Fetch all Products in the Products table
     {
         $products = \App\Product::all();
 

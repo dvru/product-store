@@ -34,7 +34,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request) { // POST HTTP REQUEST
+    public function store(Request $request) { // POST HTTP REQUEST, receives and stores data
         \App\Product::create([
           'name' => $request->get('name'),
           'description' => $request->get('description'),
